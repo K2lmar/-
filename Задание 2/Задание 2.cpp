@@ -1,24 +1,17 @@
-﻿// Задание 1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Задание 2.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
 using namespace std;
 int main()
 {
-    int a, b;
-    for (int i = 1; i <= 10; i++)
+    setlocale(0, "");
+    int sum = 0;
+    for (int i = 0; i <= 10; i++)
     {
-        a = (i * 2) - 1;
-        b = (21 - a) / 2;
-        cout << endl;
-        for (int j = 1; j <= 21; j++)
-        {
-            if ((j <= b) || (j > (21 - b)))
-                cout << " ";
-            else
-                cout << "*";
-        }
+        sum = sum + i;
     }
+    cout << "Сумма 10 натуральных чисел = " << sum << endl;
     return 0;
 }
 

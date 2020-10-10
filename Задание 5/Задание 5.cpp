@@ -1,24 +1,21 @@
-﻿// Задание 1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Задание 5.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
 using namespace std;
 int main()
 {
-    int a, b;
-    for (int i = 1; i <= 10; i++)
+    setlocale(0, "");
+    int a;
+    int b = 0;
+    cout << "Введите число: ";
+        cin >> a;
+    while (a)
     {
-        a = (i * 2) - 1;
-        b = (21 - a) / 2;
-        cout << endl;
-        for (int j = 1; j <= 21; j++)
-        {
-            if ((j <= b) || (j > (21 - b)))
-                cout << " ";
-            else
-                cout << "*";
-        }
+        a = a / 10;
+        b++;
     }
+    cout << b << endl;
     return 0;
 }
 
